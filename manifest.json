@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Unshitify USOS",
+  "version": "1.0",
+
+  "description": "Make USOSweb usable again!",
+
+  "icons": {
+    "512": "icons/512.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://usosweb.usos.pw.edu.pl/*"],
+      "js": ["unshitify.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{f5a31d2a-3bc0-4ea3-9e7f-259ddcfdf1f2}"
+    }
+  }
+}
